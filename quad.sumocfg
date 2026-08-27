@@ -1,0 +1,9 @@
+<configuration>
+    <input>
+        <net-file value="quad.net.xml"/>
+        <route-files value="quad.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+    </time>
+</configuration>

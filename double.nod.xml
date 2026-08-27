@@ -1,0 +1,15 @@
+<nodes>
+    <!-- The Two Traffic Light Junctions -->
+    <node id="J1" x="0.0" y="0.0" type="traffic_light"/>
+    <node id="J2" x="500.0" y="0.0" type="traffic_light"/>
+
+    <!-- The End Points -->
+    <node id="W"  x="-500.0" y="0.0" type="priority"/>
+    <node id="E"  x="1000.0" y="0.0" type="priority"/>
+    
+    <node id="N1" x="0.0" y="500.0" type="priority"/>
+    <node id="S1" x="0.0" y="-500.0" type="priority"/>
+    
+    <node id="N2" x="500.0" y="500.0" type="priority"/>
+    <node id="S2" x="500.0" y="-500.0" type="priority"/>
+</nodes>

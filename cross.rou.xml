@@ -1,0 +1,21 @@
+<routes>
+    <!-- Define a normal car -->
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="70"/>
+    
+    <!-- Define an AMBULANCE (Blue color, faster, emergency class) -->
+    <vType id="ambulance" vClass="emergency" guiShape="emergency" color="0,0,255" accel="3.0" decel="5.0" maxSpeed="90"/>
+
+    <route id="WE" edges="W_to_J1 J1_to_E"/>
+    <route id="EW" edges="E_to_J1 J1_to_W"/>
+    <route id="NS" edges="N_to_J1 J1_to_S"/>
+    <route id="SN" edges="S_to_J1 J1_to_N"/>
+
+    <!-- Normal Traffic -->
+    <flow id="flow_WE" type="car" route="WE" begin="0" end="3600" number="300" />
+    <flow id="flow_EW" type="car" route="EW" begin="0" end="3600" number="300" />
+    <flow id="flow_NS" type="car" route="NS" begin="0" end="3600" number="50" />
+    <flow id="flow_SN" type="car" route="SN" begin="0" end="3600" number="50" />
+
+    <!-- THE EMERGENCY VEHICLE: Enters at step 150 from the West -->
+    <vehicle id="EMERGENCY_AMBULANCE" type="ambulance" route="WE" depart="150" />
+</routes>

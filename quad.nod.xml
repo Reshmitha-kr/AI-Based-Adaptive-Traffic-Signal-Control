@@ -1,0 +1,23 @@
+<nodes>
+    <!-- The Four Traffic Light Junctions (2x2 Grid) -->
+    <node id="J1" x="0.0" y="500.0" type="traffic_light"/>
+    <node id="J2" x="500.0" y="500.0" type="traffic_light"/>
+    <node id="J3" x="0.0" y="0.0" type="traffic_light"/>
+    <node id="J4" x="500.0" y="0.0" type="traffic_light"/>
+
+    <!-- West Endpoints -->
+    <node id="W1" x="-500.0" y="500.0" type="priority"/>
+    <node id="W3" x="-500.0" y="0.0" type="priority"/>
+    
+    <!-- East Endpoints -->
+    <node id="E2" x="1000.0" y="500.0" type="priority"/>
+    <node id="E4" x="1000.0" y="0.0" type="priority"/>
+    
+    <!-- North Endpoints -->
+    <node id="N1" x="0.0" y="1000.0" type="priority"/>
+    <node id="N2" x="500.0" y="1000.0" type="priority"/>
+
+    <!-- South Endpoints -->
+    <node id="S3" x="0.0" y="-500.0" type="priority"/>
+    <node id="S4" x="500.0" y="-500.0" type="priority"/>
+</nodes>

@@ -1,0 +1,9 @@
+<configuration>
+    <input>
+        <net-file value="double.net.xml"/>
+        <route-files value="double.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+    </time>
+</configuration>

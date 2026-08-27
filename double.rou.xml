@@ -1,0 +1,18 @@
+<routes>
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="70"/>
+    
+    <!-- CHANGE: Made Ambulance BLUE and faster -->
+    <vType id="ambulance" vClass="emergency" guiShape="emergency" color="0,0,255" accel="4.0" decel="6.0" maxSpeed="100"/>
+
+    <route id="route_long_WE" edges="W_to_J1 J1_to_J2 J2_to_E"/>
+    <route id="route_N1S1" edges="N1_to_J1 J1_to_S1"/>
+    <route id="route_N2S2" edges="N2_to_J2 J2_to_S2"/>
+
+    <!-- CHANGE: Reduced traffic from 800 to 400 for testing -->
+    <flow id="flow_long" type="car" route="route_long_WE" begin="0" end="3600" number="400" />
+    <flow id="flow_J1_vert" type="car" route="route_N1S1" begin="0" end="3600" number="200" />
+    <flow id="flow_J2_vert" type="car" route="route_N2S2" begin="0" end="3600" number="200" />
+
+    <!-- CHANGE: Spawn an ambulance every 100 seconds -->
+    <flow id="ambulance_flow" type="ambulance" route="route_long_WE" begin="100" end="3600" period="100" />
+</routes>
